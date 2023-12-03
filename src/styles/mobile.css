@@ -1,0 +1,42 @@
+/* Mobile Responsive style */
+
+@media (max-width: 425px) {
+    .jumbotron h1 {
+        font-size: 26px;
+    }
+
+    .jumbotron h2 {
+        font-size: 60%;
+    }
+
+    /* Grid */
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 25%;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .grid>article {
+        width: 200px;
+    }
+
+    .grid>article img {
+        width: 200px;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 10px;
+    }
+
+    img.resto-image {
+        width: 250px !important;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    #inputName {
+        margin-inline-start: 0 !important;
+    }
+}

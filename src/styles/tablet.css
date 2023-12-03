@@ -1,0 +1,91 @@
+/* Responsive Tablet & Mobile */
+@media (max-width: 770px) {
+    /* Nav */
+
+    label.logo {
+        padding: 0 10%;
+    }
+
+    .drawer {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        height: auto;
+        background: #B5CB99;
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        margin: 0 !important;
+    }
+
+    .show-nav {
+        left: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 40px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        padding: 16px 20px;
+        color: black;
+    }
+
+    a:hover {
+        color: #186F65;
+    }
+
+    a#drawer:visited {
+        color: white;
+    }
+
+    /* Jumbotron */
+
+    .jumbotron {
+        height: 300px;
+    }
+
+    .jumbotron h1 {
+        font-size: 40px;
+    }
+
+    .jumbotron h2 {
+        font-size: 20px;
+    }
+
+    /* Grid */
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10%;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    /* Footer */
+    footer {
+        margin-top: 50px;
+    }
+
+    img.resto-image {
+        width: 500px;
+        height: auto;
+    }
+
+    
+}
+
+@media (max-width: 715px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20%;
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,333 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Skip link */
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background-color: white;
+    color: #186F65;
+    padding: 15px 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Nav */
+
+nav {
+    background: #186F65;
+    height: 80px;
+    width: 100%;
+    margin: 0;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 20px 100px;
+    font-weight: bold;
+}
+
+ul.menu {
+    float: right;
+    margin: 0 7%;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 16px 10px;
+    min-height: 50px;
+
+}
+
+a:hover {
+    color: #B5CB99;
+    transition: .5s;
+}
+
+.drawer {
+    font-size: 30px;
+    padding: 10px 16px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Main */
+
+header.none {
+    display: none;
+}
+
+header {
+    background-color: #186F65;
+
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url('../public/images/heros/hero-image_2.jpg');
+    width: 100%;
+    height: 500px;
+    filter: brightness(0.83);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.jumbotron h1,
+h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.jumbotron h1 {
+    font-size: 60px;
+
+}
+
+.jumbotron h2 {
+    font-size: 30px;
+}
+
+/* Konten */
+
+.explore-title {
+    padding: 50px;
+    text-align: center;
+    /* font-size: 50px; */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-inline-start: 10%;
+    margin-inline-end: 10%;
+    margin-bottom: 5%;
+    margin-top: 0;
+    align-items: center;
+    grid-gap: 35px;
+}
+
+img.card-img {
+    object-fit: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.grid>article {
+    box-shadow: 3px 2px 2px 0px black;
+    border-radius: 15px;
+    text-align: center;
+    background-color: whitesmoke;
+    width: 300px;
+
+}
+
+.grid>article img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.konten {
+    padding: 10px;
+}
+
+
+
+.konten>h2 {
+    font-size: 20px;
+    color: black;
+    text-shadow: none;
+    padding: 7px;
+}
+
+a.title {
+    color: black;
+    padding-block: 11px;
+}
+
+/* Like */
+.like {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #B5CB99;
+    
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    border-radius: 50%;
+    border: 0;
+    
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+  }
+
+/* Footer */
+footer {
+    background-color: #186F65;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+
+/* Responsive small laptop */
+@media (max-width: 1135px) {
+    /* Grid */
+    .grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    img.resto-image {
+        width: 600px !important;
+        height: auto;
+    }
+}
+
+
+/* Detail Page */
+
+h2.explore-restaurant-label {
+    color: black;
+    text-shadow: none;
+    padding: 50px;
+    padding-bottom: 0;
+}
+
+img.resto-image {
+    width: 1000px;
+    height: auto;
+    padding-top: 0;
+    border-radius: 25px;
+}
+
+.detail {
+    padding: 50px;
+}
+
+.detail-name {
+    font-size: 30px;
+    padding-block: 20px;
+    font-weight: bolder;
+}
+
+h3.list-menu {
+    text-shadow: none;
+    color: black;
+}
+
+.menu-list {
+    font-weight: normal;
+}
+h3.foods-drinks {
+    padding-block: 15px;
+}
+
+h3.review {
+    color: black;
+    text-shadow: none;
+    padding-block: 20px;
+}
+
+.detail-review-item {
+    padding-block: 15px;
+}
+
+p.name-review {
+    font-weight: bolder;
+}
+
+p.date-review {
+    font-size: 10px;
+    padding-block: 8px;
+}
+
+.form-review {
+    padding-inline: 50px;
+    padding-block-end: 50px;
+}
+
+.form-label {
+    font-weight: normal;
+}
+
+button.btn-submit {
+    padding: 8px;
+    height: 44px;
+    margin-block: 5px;
+    background-color: #B5CB99;
+    color: #186F65;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+}
+
+.forms {
+    margin-block: 5px;
+}
+
+#inputName {
+    margin-inline-start: 7px;
+}
+
+.form-control {
+    background-color: #e1eed0;
+    height: 44px;
+    border: none;
+    border-radius: 6px;
+}
+
+p.empty-fav {
+    text-align: center;
+    color: black;
+    text-shadow: none;
+    font-weight: normal;
+    margin-block-end: 500px;
+}
+
+@media only screen and (max-width: 650px) {
+    .jumbotron {
+        background-image:url('../public/images/heros/hero-image_2.jpg');
+    }
+}
+
+@media only screen and (min-width: 651px) {
+    .jumbotron {
+        background-image:url('../public/images/heros/hero-image_2.jpg');
+    }
+}
